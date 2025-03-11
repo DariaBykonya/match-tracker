@@ -31,7 +31,7 @@ export default function Home() {
               <p>Ошибка: не удалось загрузить информацию</p>
             </div>
           }
-          <button className='flex gap-[10px] font-semibold bg-[#EB0237] px-[40px] py-[15px] text-lg/[22px] rounded-sm hover:bg-[#A01131] active:bg-[#A01131] items-center' onClick={handleFetch}>
+          <button className='flex gap-[10px] font-semibold bg-[#EB0237] px-[40px] py-[15px] text-lg/[22px] rounded-sm hover:bg-[#A01131] hover:cursor-pointer active:bg-[#A01131] items-center' onClick={handleFetch}>
             Обновить 
             <div className={`bg-[url(/images/refresh.svg)] size-[26px] ${isLoading && 'animate-spin'}`}></div>
           </button>
